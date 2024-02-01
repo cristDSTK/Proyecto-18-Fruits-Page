@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@media screen and (max-width:1400px) {
+   .header__nav {
+        width: 1200px;
+   }
+   .products {
+    width: 1200px;
+   }
+   .deals {
+    width: 1000px;
+   }
+   .follow {
+    width: 1200px;
+   }
+}
+
+@media screen and (max-width:1200px) {
+    .header__nav {
+        width: 900px;
+    }
+    .header__nav--logo {
+        width: 150px;
+    }
+    .header__nav--contain {
+        width: 400px;
+    }
+    .header__nav--icons {
+        width: 140px;
+    }
+    .header__title {
+        margin: 90px 100px 0 0;
+    }
+    .header__title h1 {
+        font-size: 80px;
+    }
+    .products {
+        width: 900px;
+        height: 1400px;
+    }
+    .products__box {
+        height: 1000px;
+    }
+    .products__box--contain__img img {
+        width: 80%;
+    }
+    .deals {
+        width: 900px;
+    }
+    .deals__box2 img {
+        width: 100%;
+    }
+    .deals__box3--div {
+        width: 70%;
+    }
+    .deals__box3--div p b {
+        font-size: 30px;
+    }
+    .fruits {
+        height: 400px;
+    }
+    .follow {
+        width: 900px;
+    }
+    .follow__box2 h2 {
+        font-size: 35px;
+    }
+    .follow__box2 p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .header__nav {
+        width: 700px;
+    }
+    .header__nav--contain {
+        display: none;
+    }
+    .header__nav--icons {
+        width: 200px;
+    }
+    .header__title {
+        margin: 90px 0 0 0;
+        align-items: center;
+        text-align: center;
+    }
+    .products {
+        width: 700px;
+        height: 1600px;
+    }
+    .products__icons {
+        width: 650px;
+    }
+    .products__box {
+        height: 1300px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .deals {
+        width: 700px;
+    }
+    .deals__contain {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 80px 1fr 80px;
+        grid-template-areas: 
+            "time text"
+            "fruit text"
+            "other text"
+        ;
+    }
+    .deals__box1 {
+        grid-area: other;
+        flex-direction: row;
+        column-gap: 15px;
+    }
+    .deals__box1 img {
+        width: 60px;
+        height: 60px;
+    }
+    .deals__box2 {
+        grid-area: fruit;
+    }
+    .deals__box2 p  {
+        height: 40px;
+        font-size: 25px;
+        border-radius: 20px;
+    }
+    .deals__box3 {
+        grid-area: time;
+    }
+    .deals__box3--div {
+        flex-direction: row;
+        width: 100%;
+        margin: 0;
+        height: 90%;
+    }
+    .deals__box3--div p b{
+        font-size: 25px;
+    }
+    .deals__box3--div p small  {
+        font-size: 15px;
+    }
+    .deals__box4 {
+        grid-area: text;
+        padding-left: 10px;
+    }
+    .deals__box4 h2 {
+        font-size: 35px;
+    }
+    .deals__box4 p {
+        text-align: justify;
+    }
+    .follow {
+        width: 700px;
+        height: 1050px;
+    }
+    .follow__box {
+        height: 900px;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .follow__main {
+        grid-row: 1 / 3;
+        row-gap: 30px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .header__nav {
+        width: 350px;
+    }
+    .header__nav--logo {
+        width: 120px;
+    }
+    .header__nav--icons {
+        width: 150px;
+        margin-right: 15px;
+    }
+    .header__nav--logo p {
+        font-size: 35px;
+    }
+    .header__title {
+        width: 350px;
+    }
+    .header__title h1 {
+        font-size: 60px;
+    }
+    .header__title p {
+        width: 300px;
+        font-size: 15px;
+    }
+    .products {
+        width: 350px;
+        height: 2100px;
+    }
+    .subtitle {
+        width: 350px;
+    }
+    .products h2 {
+        font-size: 28px;
+    }
+    .products__icons--btn  {
+        height: 120px;
+    }
+    .products__icons {
+        height: 280px;
+        width: 350px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .products__icons--btn i{
+       padding: 15px;
+       font-size: 25px;
+    }
+    .products__icons--btn p {
+        font-size: 14px;
+        text-align: center;
+    }
+    .products__box {
+        gap: 20px;
+        height: 1700px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+    .products__box--contain__text b {
+        font-size: 16px;
+    }
+    .products__box--contain__text p  {
+        font-size: 17px;
+    }
+    .products__btn {
+        margin-top: 30px;
+    }
+    .deals {
+        width: 350px;
+        height: 870px;
+    }
+    .deals__title {
+        width: 350px;
+    }
+    .deals__contain {
+        height: 800px;
+        row-gap: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px 260px 300px 80px;
+        grid-template-areas: 
+            "time"
+            "fruit"
+            "text"
+            "other"
+        ;
+    }
+    .deals__box3--div {
+        height: 60px;
+    }
+    .deals__box2 img {
+        width: 80%;
+    }
+    .deals__box1 {
+        margin-top: 20px;
+    }
+    .deals__box4 p {
+        width: 100%;
+    }
+    .follow {
+        margin-top: -50px;
+        width: 350px;
+        height: 1350px;
+    }
+    .follow__box {
+        height: 1200px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .follow__main {
+        grid-row: 1 / 2;
+    }
+}
