@@ -120,6 +120,13 @@ button {
     background-color: var(--hoverOscuro);
   }
 }
+.openMenu {
+  color: var(--hoverOscuro);
+  background-color: rgb(211, 211, 211, 0);
+  border: none;
+  font-size: 30px;
+  display: none;
+}
 
 .header__title {
   margin: 90px auto;
@@ -203,6 +210,7 @@ button {
 .products__icons {
   width: 700px;
   height: 150px;
+  box-sizing: border-box;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   align-items: center;
